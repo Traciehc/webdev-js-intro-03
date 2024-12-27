@@ -1,0 +1,48 @@
+1.  When you use the + operator with a number and a string, JavaScript converts
+
+    the number to a string and then concatenates (joins) them together.  It is a process
+
+    called type coercion.
+
+2.  One scenario would be if a user's age is required to login and the input is compared  
+
+    to a stored age value to view age-restricted content.  If the user's input is treated  
+
+    as a string, it could lead to unintended results.  Using the strict equality operator 
+
+    === would avoid this bug.
+
+3.  The operator I'm least familiar with is the Modulus operator.  I guess the reason it 
+
+    is confusing is because I don't understand why it would be used other than to check if 
+
+    a number is even or odd.
+
+4.  To check if a number is even:  
+
+    let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+    numbers.forEach(number => {
+    if (number % 2 === 0) {
+        console.log(number + " is even.");
+    } else {
+        console.log(number + " is odd.");
+    }
+});
+
+	number % 2 calculates the remainder when number is divided by 2.
+
+	If the remainder is 0, the number is even.
+
+	If the remainder is 1, the number is odd.
+
+Output:     1 is odd
+            2 is even
+            3 is odd
+            4 is even
+            5 is odd
+            6 is even
+            7 is odd
+            8 is even
+            9 is odd
+            10 is even
